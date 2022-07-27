@@ -9,24 +9,62 @@
     <link rel="stylesheet" type="text/css" href="http://localhost:1337/../css/index.css">
 </head>
 <body>
-<div class="bg-image"></div>
-
 
 <div class="header"></div>
 <div class="bg-text">
-    <h1 style="font-size:50px">UFOs official website</h1>
-    <div class ="navbar"><ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">Socials</a></li>
-        <li><a href="#contact">Store</a></li>
-        <li><a href="#news">Help</a></li>
-        <li><a href="#news">Contact</a></li>
-    </ul>
-    </div>
+    <h1 style="font-size:50px">UFOS-GAMBLING.COM</h1>
+    <p1 style="font-size:24px">www.twitch.tv/ufos</p1>
+    <div class="logo"><img class ="logo" src ="./logo.png"></div>
 </div>
-<div class="main-text">
-    <iframe src="https://player.twitch.tv/?channel=ufos&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe></div>
+<div id="navbar">
+    <a href="#news">News</a>
+    <a href="#casino">Casino</a>
+    <a href="#socials">Socials</a>
+    <a href="#videos">Videos</a>
+    <a href="#store">Store</a>
+    <a href="#contact">Contact</a>
+</div>
+<div class="content">
+    <h2 class="livestream">LIVESTREAM</h2>
+    <iframe src="https://player.twitch.tv/?channel=ufos&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+    <iframe
+            id="chat_embed"
+            src="https://www.twitch.tv/embed/ufos/chat?parent=localhost"
+            height="378"
+            width="350">
+    </iframe>
+    <h2 class="livestream">RECENT VIDEOS</h2>
+    <iframe width="360" height="190" src="https://www.youtube.com/embed/NcFFK19pri0" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="280" height="157" src="https://www.youtube.com/embed/v8RP8I5OEbI" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="280" height="157" src="https://www.youtube.com/embed/0eWa7M2PgoU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <h2 class="livestream">FREQUENTLY ASKED QUESTIONS</h2>
+
+    <p class="faq-text"> HOW CAN I TAKE PART IN ONE OF YOUR GIVEAWAYS?</p>
+    <p class="faq-answer"> - Watch the stream and follow me on twitter. I will announce my giveaways there</p>
+    <p class="faq-text"> HOW DO I EARN POINTS FOR YOUR STORE</p>
+    <p class="faq-answer"> - Simply follow the channel and watch. You get free points for just watching the stream!</p>
+    <p class="faq-text"> HOW CAN I SPEND MY STORE POINTS?</p>
+    <p class="faq-answer"> - Visit my store here and simply click on the item you would like to redeem</p>
+    <p class="faq-text"> CAN I TRANSFER MY POINTS TO ANY OTHER STREAMER STORES?</p>
+    <p class="faq-answer"> - Yes! Currently you can transfer points at a 1:1 ratio to Yassuo's store</p>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
